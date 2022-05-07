@@ -1,0 +1,53 @@
+
+.basic-table {
+  background-color: #29e;
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 10px;
+
+ /* This makes things *much* easier */
+  box-sizing: border-box;
+}
+
+.table-primary{
+  background-color: rgb(89, 11, 190);
+}
+
+.table-secondary{
+  background-color: rgb(46, 42, 42);
+}
+
+.table-danger{
+  background-color: rgb(236, 22, 22);
+}
+
+.table-contained{
+  background-color: rgb(2, 44, 78);
+}
+
+.table-round {
+  border-radius: 50%;
+  display: inline-block;
+}
+.table-square {
+  display :inline-block;
+}
+.table-rectangle {
+  display :inline-block;
+  padding: 0 5%;
+}
+.table-small {
+  width:25px;
+  height :25px;
+}
+.table-medium {
+  width:30px;
+  height :30px;
+}
+.table-large {
+  width:40px;
+  height :40px;
+}
