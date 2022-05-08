@@ -2,10 +2,8 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import InputField from '../molecules/InputField';
-
 import { PropTypes } from 'prop-types';
-import Accordion from '../molecules/Accordion'
-import { useState } from 'react';
+import Accordion from '../molecules/Accordion';
 
 const useStyles = makeStyles({
     root: {
@@ -20,52 +18,35 @@ const useStyles = makeStyles({
     container: {
         minHeight: '50px',
         minWidth: '100px',
-
     }
 });
 
 const Restaurant = () => {
-
     const classes = useStyles();
-
     return (
-        // <div>
-        //     <Accordion headerText={'Restaurant Setup'} />
-
-        // </div>
         <Accordion headerText={'Restaurant Setup'} isOpen={true}>
-
             <div>
-
                 <Grid container spacing={0} >
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Restaurant" id="Rs1" placeholder='Label' />
+                        <InputField name="Restaurant" id="rest" placeholder='restaurant' />
                     </Grid>
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Concept" id="Rs2" placeholder='Concept Name' />
-                    </Grid>
-                    {/* <Grid item xs={1} /> */}
-
-                    <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Division" id="Rs3" placeholder='Label' />
+                        <InputField name="Concept" id="concpt" placeholder='concept' />
                     </Grid>
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Region" id="Rs4" placeholder='Label' />
+                        <InputField name="Division" id="div" placeholder='division' />
                     </Grid>
-
-
+                    <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+                        <InputField name="Region" id="reg" placeholder='region' />
+                    </Grid>
                 </Grid>
                 <Grid container spacing={0}>
-                    <Grid item md={6} lg={6} sm={6} xs={6} xs={3} className={classes.container}>
-                        <InputField name="Description" id="Rs10" size='67' placeholder='Label' />
+                    <Grid item md={6} lg={6} sm={6} xs={6} className={classes.container}>
+                        <InputField name="Description" id="desc" size='67' placeholder='description' />
                     </Grid>
-
                 </Grid>
             </div>
         </Accordion>
-
-
-
     )
 }
 Restaurant.propTypes = {
@@ -78,4 +59,4 @@ Restaurant.propTypes = {
 //     id: '',
 //     size: '',
 // };
-export default Restaurant
+export default Restaurant;
