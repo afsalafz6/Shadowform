@@ -1,8 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { PropTypes } from 'prop-types';
-import InputField from '../molecules/InputField'
 import Grid from '@material-ui/core/Grid';
+import InputField from '../molecules/InputField';
+
+import { PropTypes } from 'prop-types';
 import Accordion from '../molecules/Accordion'
 import { useState } from 'react';
 
@@ -23,19 +24,20 @@ const useStyles = makeStyles({
     }
 });
 
-
 const Restaurant = () => {
 
     const classes = useStyles();
 
     return (
-        <div>
-            <Accordion headerText={'Restaurant Setup'} isOpen={true} />
+        // <div>
+        //     <Accordion headerText={'Restaurant Setup'} />
 
+        // </div>
+        <Accordion headerText={'Restaurant Setup'} isOpen={true}>
 
             <div>
 
-                <Grid container spacing={0} className={classes.root}>
+                <Grid container spacing={0} >
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
                         <InputField name="Restaurant" id="Rs1" placeholder='Label' />
                     </Grid>
@@ -53,15 +55,17 @@ const Restaurant = () => {
 
 
                 </Grid>
-                <Grid container spacing={0} className={classes.root}>
+                <Grid container spacing={0}>
                     <Grid item md={6} lg={6} sm={6} xs={6} xs={3} className={classes.container}>
                         <InputField name="Description" id="Rs10" size='67' placeholder='Label' />
                     </Grid>
 
                 </Grid>
             </div>
+        </Accordion>
 
-        </div>
+
+
     )
 }
 Restaurant.propTypes = {
