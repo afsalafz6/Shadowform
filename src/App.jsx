@@ -4,6 +4,7 @@ import RestaurantSetup from './components/organisms/RestaurantSetup';
 import RestaurantInformation from './components/organisms/RestaurantInformation';
 import RestaurantConfiguration from './components/organisms/RestaurantConfiguration';
 import GuestSatisfaction from './components/organisms/GuestSatisfaction';
+import MpsSettings from './components/organisms/MpsSettings';
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <RestaurantInformation />
       <RestaurantConfiguration />
       <GuestSatisfaction />
+      <MpsSettings />
     </>
   );
 }
