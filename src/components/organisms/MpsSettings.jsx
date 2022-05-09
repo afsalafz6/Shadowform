@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Accordion from '../molecules/Accordion';
 import Label from '../atoms/Label';
+import Button from '../atoms/Button';
 
 const useStyles = makeStyles({
   root: {
@@ -37,7 +38,7 @@ const MpsSettings = () => {
             </Grid>
           </Grid>
           <Grid item md={9} lg={9} sm={9} xs={9} className={classes.container}>
-            <button>Change</button>
+            <Button text="Change" position="relative" top="50px"></Button>
           </Grid>
         </Grid>
       </div>
