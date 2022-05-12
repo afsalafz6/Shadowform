@@ -43,7 +43,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      background:'white'
+    background: 'white'
   }
 }));
 

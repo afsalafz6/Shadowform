@@ -28,7 +28,11 @@ const MpsSettings = () => {
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
             <Grid item md={12} lg={12} sm={12} xs={12} className={classes.container}>
-              <Label label="MPS Model: Example Pre-Defined Name" name="MPS Model: Example Pre-Defined Name" id="mps1" />
+              <Label
+                label="MPS Model: Example Pre-Defined Name"
+                name="MPS Model: Example Pre-Defined Name"
+                id="mps1"
+              />
             </Grid>
             <Grid item md={12} lg={12} sm={12} xs={12} className={classes.container}>
               <Label label="Version: 1.1003" name="Version: 1.1003" id="mps2" />

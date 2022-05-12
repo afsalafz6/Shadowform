@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Label = (props) => {
-    return (
-        <div>
-            <label htmlFor={props.id}>{props.label} </label>
-        </div>
-    )
-}
+  const { id, label } = props;
+  return (
+    <div>
+      <label htmlFor={id}>{label} </label>
+    </div>
+  );
+};
 
-export default Label
+export default Label;

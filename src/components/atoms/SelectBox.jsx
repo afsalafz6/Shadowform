@@ -22,7 +22,7 @@ const Select = styled.select`
 `;
 
 const SelectBox = (props) => {
-
+  const { name, id } = props;
   const [data] = useState(props.data);
 
   let options = data.map((data) => (
@@ -33,7 +33,7 @@ const SelectBox = (props) => {
 
   return (
     <Select
-      name={props.name} placeholder="select" id={props.id}
+      name={name} placeholder="select" id={id}
     >
       <option>Select</option>
       {options}

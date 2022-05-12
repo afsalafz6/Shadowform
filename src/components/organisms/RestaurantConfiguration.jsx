@@ -81,7 +81,11 @@ const RestaurantConfiguration = () => {
             <SelectField label="Tip Share" name="Tip Share" id="tipshare" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField label="Clock-In Exception List" name="Clock-In Exception List" id="clock" />
+            <SelectField
+              label="Clock-In Exception List"
+              name="Clock-In Exception List"
+              id="clock"
+            />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
             <SelectField label="Tip Guide" name="Tip Guide" id="tipguide" />

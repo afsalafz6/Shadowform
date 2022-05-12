@@ -40,13 +40,26 @@ const RestaurantInformation = () => {
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField type="text" label="Phone Number" name="Phone Number" id="phone" placeholder="phone number" />
+            <InputField
+              type="text"
+              label="Phone Number"
+              name="Phone Number"
+              id="phone"
+              placeholder="phone number"
+            />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
             <InputField type="text" label="Fax" name="Fax" id="fax" placeholder="fax" />
           </Grid>
           <Grid item md={6} lg={6} sm={6} xs={6} className={classes.container}>
-            <InputField type="text" label="Email" name="Email" id="email" size="67" placeholder="email" />
+            <InputField
+              type="text"
+              label="Email"
+              name="Email"
+              id="email"
+              size="67"
+              placeholder="email"
+            />
           </Grid>
         </Grid>
       </div>
