@@ -46,7 +46,7 @@ const GuestSatisfaction = () => {
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-          <InputField name="Legecy Restaurant Number" id="gs6" placeholder='Label' />
+          <InputField type="number" name="Legecy Restaurant Number" id="gs6" placeholder='Label' />
           </Grid>
         </Grid>
       </div>

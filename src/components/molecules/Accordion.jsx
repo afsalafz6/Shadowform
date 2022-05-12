@@ -1,5 +1,4 @@
 import React from 'react';
-import InputField from '../molecules/InputField';
 import Grid from '@material-ui/core/Grid';
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
@@ -7,18 +6,12 @@ import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: '#eaeaea',
+    backgroundColor: '#F2F2F2',
     // border: "2px solid #2D2D2D",
+    height:'30px',
     '& div': {
       position: 'relative'
     }
-  },
-  tableSelector: {
-    maxHeight: '20vh'
-  },
-  container: {
-    minHeight: '50px',
-    minWidth: '100px'
   }
 }));
 
@@ -28,12 +21,12 @@ const Accordion = (props) => {
   const [show, setShow] = useState(isOpen);
   return (
     <div>
-      <div>
-        <Grid container spacing={0} className={classes.root}>
-          <Grid item md={11} lg={11} sm={11} xs={11} className={classes.container}>
-            <p>{headerText}</p>
+      <div className={classes.root}>
+        <Grid container spacing={0}>
+          <Grid item md={11} lg={11} sm={11} xs={11}>
+            <division>{headerText}</division>
           </Grid>
-          <Grid item md={1} lg={1} sm={1} xs={1} className={classes.container}>
+          <Grid item md={1} lg={1} sm={1} xs={1}>
             <div onClick={() => setShow(!show)}>
               {show ? <IndeterminateCheckBoxOutlinedIcon /> : <AddBoxOutlinedIcon />}
             </div>

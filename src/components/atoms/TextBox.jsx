@@ -12,9 +12,10 @@ const Input = styled.input`
 `;
 
 const TextBox = (props) => {
+    const { type ="number", id = '',size='', placeholder='' } = props;
     return (
         <div>
-            <Input type="text" id={props.id} size={props.size} placeholder={props.placeholder} />
+            <Input type={type} id={id} size={size} placeholder={placeholder} />
         </div>
     )
 }

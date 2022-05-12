@@ -28,21 +28,21 @@ const Restaurant = () => {
             <div>
                 <Grid container spacing={0} >
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Restaurant" id="rest" placeholder='restaurant' />
+                        <InputField type="text" name="Restaurant" id="rest" placeholder='restaurant' />
                     </Grid>
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Concept" id="concpt" placeholder='concept' />
+                        <InputField type="text" name="Concept" id="concpt" placeholder='concept' />
                     </Grid>
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Division" id="div" placeholder='division' />
+                        <InputField type="text" name="Division" id="div" placeholder='division' />
                     </Grid>
                     <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-                        <InputField name="Region" id="reg" placeholder='region' />
+                        <InputField type="text" name="Region" id="reg" placeholder='region' />
                     </Grid>
                 </Grid>
                 <Grid container spacing={0}>
                     <Grid item md={6} lg={6} sm={6} xs={6} className={classes.container}>
-                        <InputField name="Description" id="desc" size='67' placeholder='description' />
+                        <InputField type="text" name="Description" id="desc" size='67' placeholder='description' />
                     </Grid>
                 </Grid>
             </div>

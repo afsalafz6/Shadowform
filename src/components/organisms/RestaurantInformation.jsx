@@ -26,27 +26,27 @@ const RestaurantInformation = () => {
       <div>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField name="Street" id="street" placeholder="street" />
+            <InputField type="text" name="Street" id="street" placeholder="street" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField name="City" id="city" placeholder="city " />
+            <InputField type="text" name="City" id="city" placeholder="city " />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField name="State" id="state" placeholder="state" />
+            <InputField type="text" name="State" id="state" placeholder="state" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField name="Zip" id="zip" placeholder="zip" />
+            <InputField type="text" name="Zip" id="zip" placeholder="zip" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField name="Phone Number" id="phone" placeholder="phone number" />
+            <InputField type="text" name="Phone Number" id="phone" placeholder="phone number" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <InputField name="Fax" id="fax" placeholder="fax" />
+            <InputField type="text" name="Fax" id="fax" placeholder="fax" />
           </Grid>
           <Grid item md={6} lg={6} sm={6} xs={6} className={classes.container}>
-            <InputField name="Email" id="email" size="67" placeholder="email" />
+            <InputField type="text" name="Email" id="email" size="67" placeholder="email" />
           </Grid>
         </Grid>
       </div>
