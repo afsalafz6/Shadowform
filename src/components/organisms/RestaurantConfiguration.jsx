@@ -26,68 +26,68 @@ const RestaurantConfiguration = () => {
       <div>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Locale Template" id="localetemp" />
+            <SelectField label="Locale Template" name="Locale Template" id="localetemp" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Menu Template" id="menutemp" />
+            <SelectField label="Menu Template" name="Menu Template" id="menutemp" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Operation Template" id="operntemp" />
+            <SelectField label="Operation Template" name="Operation Template" id="operntemp" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Center List" id="centerlist" />
-          </Grid>
-        </Grid>
-        <Grid container spacing={0}>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Room List" id="roomlist" />
-          </Grid>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Menu Setting" id="menuset" />
-          </Grid>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Operation Setting" id="opernset" />
-          </Grid>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Payroll Setting" id="payrlset" />
+            <SelectField label="Center List" name="Center List" id="centerlist" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Labor Setting" id="labrset" />
+            <SelectField label="Room List" name="Room List" id="roomlist" />
+          </Grid>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Menu Setting" name="Menu Setting" id="menuset" />
+          </Grid>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Operation Setting" name="Operation Setting" id="opernset" />
+          </Grid>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Payroll Setting" name="Payroll Setting" id="payrlset" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Labour Rule" id="lbrrule" />
-          </Grid>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Period Rule" id="perdrule" />
-          </Grid>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Routing Rule" id="routrule" />
-          </Grid>
-          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Tax Rule" id="taxrule" />
+            <SelectField label="Labor Setting" name="Labor Setting" id="labrset" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Prerequisite Rule" id="prereq" />
+            <SelectField label="Labour Rule" name="Labour Rule" id="lbrrule" />
+          </Grid>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Period Rule" name="Period Rule" id="perdrule" />
+          </Grid>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Routing Rule" name="Routing Rule" id="routrule" />
+          </Grid>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Tax Rule" name="Tax Rule" id="taxrule" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Tip Share" id="tipshare" />
+            <SelectField label="Prerequisite Rule" name="Prerequisite Rule" id="prereq" />
+          </Grid>
+        </Grid>
+        <Grid container spacing={0}>
+          <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
+            <SelectField label="Tip Share" name="Tip Share" id="tipshare" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Clock-In Exception List" id="clock" />
+            <SelectField label="Clock-In Exception List" name="Clock-In Exception List" id="clock" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Tip Guide" id="tipguide" />
+            <SelectField label="Tip Guide" name="Tip Guide" id="tipguide" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Offer" id="offr" />
+            <SelectField label="Offer" name="Offer" id="offr" />
           </Grid>
         </Grid>
       </div>
