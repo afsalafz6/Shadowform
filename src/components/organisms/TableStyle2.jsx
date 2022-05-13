@@ -54,6 +54,48 @@ const TableStyle2 = () => {
   function handleChange(event, newValue) {
     setValue(newValue);
   }
+  const [inputValue, setInputValue] = useState({
+    restaurant: '',
+    concept: '',
+    division: '',
+    region: '',
+    description: '',
+    street: '',
+    city: '',
+    state: '',
+    zip: '',
+    fax: '',
+    phone: '',
+    email: '',
+    localetemp: '',
+    menutemp: '',
+    operntemp: '',
+    centerlist: '',
+    roomlist: '',
+    menusett: '',
+    opernsett: '',
+    paysett: '',
+    laborsett: '',
+    labourule: '',
+    periodrule: '',
+    routrule: '',
+    taxrule: '',
+    preqrule: '',
+    tipshare: '',
+    clockexcptn: '',
+    tipguide: '',
+    offer: ''
+
+  });
+
+  const handleChange2 = (e) => {
+    const { name, value } = e.target;
+    setInputValue((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+    console.log(inputValue);
+  };
 
   return (
     <div className={classes.root}>
@@ -73,9 +115,9 @@ const TableStyle2 = () => {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <RestaurantSetup />
-        <RestaurantInformation />
-        <RestaurantConfiguration />
+        <RestaurantSetup inputValue={inputValue} handleChange={handleChange2} />
+        <RestaurantInformation inputValue={inputValue} handleChange={handleChange2} />
+        <RestaurantConfiguration inputValue={inputValue} handleChange={handleChange2} />
         <GuestSatisfaction />
         <MpsSettings />
       </TabPanel>

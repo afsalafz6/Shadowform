@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
+import { PropTypes } from 'prop-types';
 import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import IndeterminateCheckBoxOutlinedIcon from '@mui/icons-material/IndeterminateCheckBoxOutlined';
 const useStyles = makeStyles((theme) => ({
@@ -24,7 +25,7 @@ const Accordion = (props) => {
       <div className={classes.root}>
         <Grid container spacing={0}>
           <Grid item md={11} lg={11} sm={11} xs={11}>
-            <division>{headerText}</division>
+            {headerText}
           </Grid>
           <Grid item md={1} lg={1} sm={1} xs={1}>
             <div onClick={() => setShow(!show)}>
@@ -36,6 +37,17 @@ const Accordion = (props) => {
       {show ? props.children : null}
     </div>
   );
+};
+Accordion.propTypes = {
+  children: PropTypes.element.isRequired,
+  headerText: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool
+};
+
+Accordion.defaultProps = {
+  children: 'children',
+  headerText: 'headerText',
+  isOpen: true
 };
 
 export default Accordion;

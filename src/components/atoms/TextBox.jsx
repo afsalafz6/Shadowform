@@ -13,6 +13,12 @@ const Input = styled.input`
 
 const TextBox = (props) => {
   const { type = 'text', id = '', name = '', size = '', placeholder = '', onChange, value } = props;
+  const handleBlur = (e) => {
+    // console.log('onBlur', e.target.value);
+    if (!e.target.value) {
+      console.log(`${e.target.name} Input field can't be Empty !!!`);
+    }
+  };
 
   return (
     <div>
@@ -24,6 +30,7 @@ const TextBox = (props) => {
         size={size}
         placeholder={placeholder}
         onChange={onChange}
+        onBlur={handleBlur}
       />
     </div>
   );

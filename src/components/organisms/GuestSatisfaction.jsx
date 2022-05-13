@@ -27,27 +27,28 @@ const GuestSatisfaction = () => {
       <div>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Default Survey for Restaurant" id="gs1" />
+            <SelectField label="Default Survey for Restaurant" name="Default Survey for Restaurant" id="gs1" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Bar Survey Override" id="gs2" />
+            <SelectField label="Bar Survey Override" name="Bar Survey Override" id="gs2" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Dine in Survey Override" id="gs3" />
+            <SelectField label="Dine in Survey Override" name="Dine in Survey Override" id="gs3" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="Takeout Survey Override" id="gs4" />
+            <SelectField label="Takeout Survey Override" name="Takeout Survey Override" id="gs4" />
           </Grid>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
-            <SelectField name="ToGo-Online Survey Override" id="gs5" />
+            <SelectField label="ToGo-Online Survey Override" name="ToGo-Online Survey Override" id="gs5" />
           </Grid>
         </Grid>
         <Grid container spacing={0}>
           <Grid item md={3} lg={3} sm={3} xs={3} className={classes.container}>
             <InputField
               type="number"
+              label="Legecy Restaurant Number"
               name="Legecy Restaurant Number"
               id="gs6"
               placeholder="Label"

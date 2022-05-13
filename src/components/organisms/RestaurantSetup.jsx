@@ -22,26 +22,27 @@ const useStyles = makeStyles({
   }
 });
 
-const Restaurant = () => {
+const Restaurant = ({ inputValue, handleChange }) => {
+  const { restaurant, concept, division, region, description } = inputValue;
   const classes = useStyles();
 
-  const [inputValue, setInputValue] = useState({
-    restaurant: '',
-    concept: '',
-    division: '',
-    region: '',
-    description: ''
-  });
-  const { restaurant, concept, division, region, description } = inputValue;
+  //   const [inputValue, setInputValue] = useState({
+  //     restaurant: '',
+  //     concept: '',
+  //     division: '',
+  //     region: '',
+  //     description: ''
+  //   });
+  //   const { restaurant, concept, division, region, description } = inputValue;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setInputValue((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-    console.log(inputValue);
-  };
+  //   const handleChange = (e) => {
+  //     const { name, value } = e.target;
+  //     setInputValue((prev) => ({
+  //       ...prev,
+  //       [name]: value
+  //     }));
+  //     console.log(inputValue);
+  //   };
 
   return (
     <Accordion headerText={'Restaurant Setup'} isOpen={true}>
@@ -111,13 +112,11 @@ const Restaurant = () => {
   );
 };
 Restaurant.propTypes = {
-  name: PropTypes.string,
-  id: PropTypes.string,
-  size: PropTypes.string
+  inputValue: PropTypes.object,
+  handleChange: PropTypes.func
 };
-// Restaurant.defaultProps = {
-//     name: '',
-//     id: '',
-//     size: '',
-// };
+Restaurant.defaultProps = {
+  inputValue: { restaurant:'', concept:'', division:'', region:'', description:'' } ,
+  handleChange: () => {console.log("handleChange func is missing !!!");}
+};
 export default Restaurant;

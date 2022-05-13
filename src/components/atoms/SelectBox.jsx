@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Select = styled.select`
   width: 80%;
@@ -22,19 +22,17 @@ const Select = styled.select`
 `;
 
 const SelectBox = (props) => {
-  const { name, id } = props;
+  const { name, id, value, onChange } = props;
   const [data] = useState(props.data);
 
   let options = data.map((data) => (
-    <option key={data.id} value={data.id}>
+    <option key={data.name} value={data.name}>
       {data.name}
     </option>
   ));
 
   return (
-    <Select
-      name={name} placeholder="select" id={id}
-    >
+    <Select name={name} placeholder="select" id={id} value={value} onChange={onChange}>
       <option>Select</option>
       {options}
     </Select>
